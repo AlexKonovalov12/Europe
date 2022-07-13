@@ -495,7 +495,10 @@
   display: flex;
   gap: 20px;
   text-align: center;
+}
 
+.calc_flex:nth-child(2) {
+  margin-top: 15px;
 }
 
 .calc_img {
