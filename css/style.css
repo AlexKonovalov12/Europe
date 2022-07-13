@@ -189,6 +189,8 @@
 
 .main {
   background-color: rgb(44 74 103);
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 .slider_wrapper {
@@ -198,7 +200,6 @@
 .slider_info {
   display: flex;
   padding-top: 70px;
-  padding-left: 100px;
   padding-bottom: 70px;
   align-items: center;
 }
@@ -247,7 +248,6 @@
 
 .stages {
   padding-top: 20px;
-  padding-left: 100px;
   font-family: "Roboto";
   margin-bottom: 30px;
   display: flex;
@@ -265,6 +265,7 @@
 
 .stage_rooms {
   width: 100%;
+  padding-left: 40px;
 }
 
 .stage {
@@ -321,6 +322,7 @@
   font-weight: 300;
   gap: 100px;
   width: 100%;
+  padding-left: 40px;
 }
 
 .stage_list_nondec {
@@ -337,7 +339,7 @@
   display: flex;
   justify-content: flex-end;
   padding-bottom: 30px;
-  padding-right: 100px;
+
 }
 
 .stage_btn {
@@ -364,17 +366,17 @@
   box-sizing: border-box;
   height: 3px;
   background-color: #F2F2F1;
-  margin-left: 100px;
-  margin-right: 100px;
   margin-bottom: 50px;
 }
 
 .container_info {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: "Roboto";
   color: #F2F2F1;
+  margin-bottom: 50px;
 }
 
 .container_box {
@@ -437,4 +439,217 @@
 
 .container_box_img {
   width: 100%;
+}
+
+.calc_wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Roboto";
+  color: #F2F2F1;
+  font-weight: 600;
+}
+
+.calc_title {
+  text-transform: uppercase;
+  font-size: 80px;
+  margin: 0;
+}
+
+.calc_title_text {
+  margin: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.calc_boxes {
+  display: flex;
+  margin-top: 50px;
+  gap: 2%;
+  align-items: flex-start;
+}
+
+.calc_box {
+  width: 23%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 2px solid #497FAA;
+  box-shadow: 5px 5px 10px #020d18,
+    -5px -5px 10px #2366a5;
+
+}
+
+.calc_box_txt {
+  color: #A87830;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.calc_box_price {
+  color: #1F405A;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.calc_flex {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+
+}
+
+.calc_img {
+  width: 20%;
+  max-width: 50px;
+
+}
+
+.calc_flex_info {
+  width: 80%;
+}
+
+.calc_box_bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #8F8E8D;
+}
+
+.slidecontainer {
+  width: 100%;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #A87830;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: url(/images/Ellipse\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  background: url(/images/Ellipse\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0;
+}
+
+.calc_check_container {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 300;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.calc_check_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  background-image: url(/images/Rectangle\ 39.svg);
+  background-size: 25px;
+}
+
+.calc_check_container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.calc_check_container input:checked~.checkmark {
+  background-color: #A87830;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.calc_check_container input:checked~.checkmark:after {
+  display: block;
+}
+
+.calc_check_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.calc_button {
+  display: flex;
+  gap: 50px;
+}
+
+.calc_btn {
+  margin-top: 30px;
+  width: 450px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #A87830;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: #F2F2F1;
+  font-size: 28px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.calc_btn:hover {
+  color: #1F405A;
+}
+
+.calc_button_text {
+  width: 500px;
+  margin-top: 30px;
 }
