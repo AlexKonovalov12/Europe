@@ -16,8 +16,9 @@
   font-weight: 600;
 }
 
-.body {
+.body_content {
   background-color: rgb(44 74 103);
+  margin: 0;
 }
 
 .wrapper {
@@ -54,7 +55,8 @@
 }
 
 .wrapper_icon {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .menu {
@@ -225,7 +227,8 @@
 }
 
 .slider_btn {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 100px;
   border-radius: 50px;
   background-color: #A87830;
@@ -247,16 +250,21 @@
   padding-left: 100px;
   font-family: "Roboto";
   margin-bottom: 30px;
+  display: flex;
 }
 
 .stages_head {
-  display: flex;
+  width: 50%;
   margin-bottom: 30px;
 }
 
 .stage_head {
-  width: 50%;
+  width: 100%;
+  margin-bottom: 50px;
+}
 
+.stage_rooms {
+  width: 100%;
 }
 
 .stage {
@@ -278,14 +286,19 @@
 }
 
 .stages_info {
-  display: flex;
+  width: 50%;
+  margin-bottom: 30px;
 }
 
 .stage_image {
-  width: 50%;
-
+  width: 100%;
   position: relative;
   padding-right: 0;
+}
+
+.stage_img {
+  max-width: 650px;
+  width: 100%;
 }
 
 .plus {
@@ -296,7 +309,7 @@
   width: 50px;
   position: absolute;
   right: 100px;
-  bottom: 20px;
+  bottom: 0px;
 
 }
 
@@ -306,8 +319,8 @@
   color: #F2F2F1;
   font-size: 30px;
   font-weight: 300;
-  gap: 60px;
-  width: 50%;
+  gap: 100px;
+  width: 100%;
 }
 
 .stage_list_nondec {
@@ -340,9 +353,88 @@
   border: none;
   cursor: pointer;
   margin-left: auto;
-  margin-right: 50px;
+
 }
 
 .stage_btn:hover {
   color: rgb(44 74 103);
+}
+
+.border {
+  box-sizing: border-box;
+  height: 3px;
+  background-color: #F2F2F1;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.container_info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 100px;
+  font-family: "Roboto";
+  color: #F2F2F1;
+}
+
+.container_box {
+  width: calc(50% - 1px);
+  border-bottom: 1px solid #F2F2F1;
+  border-top: 1px solid #F2F2F1;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.container_box:nth-child(odd) {
+  border-right: 1px solid #F2F2F1;
+}
+
+.container_box:nth-child(odd) {
+  border-right: 1px solid #F2F2F1;
+}
+
+.container_name {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.container_price_box {
+  display: flex;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.container_price_box_info {
+  width: 50%;
+}
+
+.container_price_box_price {
+  width: 50%;
+
+}
+
+.cnt_prc {
+  border-radius: 50px;
+  background-color: #A87830;
+  padding-left: 15px;
+  width: 180px;
+}
+
+.container_box_img_wrap {
+  padding: 20px;
+}
+
+.container_box_img {
+  width: 100%;
 }
