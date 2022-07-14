@@ -665,7 +665,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
+    margin-left: 100px;
   }
 
   .wrapper_text {
@@ -736,6 +737,10 @@
     width: 40%;
   }
 
+  .container_name {
+    font-size: 30px;
+  }
+
   .cnt_prc {
     border-radius: 50px;
     background-color: #A87830;
@@ -780,7 +785,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .wrapper {
     background-image: url(../images/БЕРН\ МОБИЛКА\ 1.png);
     padding-top: 80px;
