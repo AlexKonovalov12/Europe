@@ -168,12 +168,49 @@
 
 .project_check {
   display: flex;
-  width: 550px;
-  height: 60px;
-  margin: auto;
+  width: 500px;
+  height: 70px;
   background-color: rgb(44 74 103);
   border-radius: 50px;
   align-items: center;
+}
+
+.project_swap_var {
+  height: 64px;
+  width: 250px;
+  text-transform: uppercase;
+  font-size: 35px;
+  font-weight: 600;
+  color: transparent;
+  align-items: center;
+  text-align: center;
+  border: 3px solid white;
+  -webkit-text-stroke: 1px white;
+  line-height: 64px;
+}
+
+.project_swap_var:hover {
+  background-color: #1F405A;
+  cursor: pointer;
+  color: #A87830;
+}
+
+.swap_left {
+  display: none;
+}
+
+.swap_right {
+  display: none;
+}
+
+.left_var {
+  border-radius: 0 50px 50px 0;
+  border-left: none;
+}
+
+.right_var {
+  border-radius: 50px 0 0 50px;
+  border-right: none;
 }
 
 .project_var {
@@ -235,14 +272,14 @@
 
 .slider_btn {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: 130px;
   border-radius: 70px 0 0 70px;
   background-color: #A87830;
   font-family: "Roboto";
   text-transform: uppercase;
   color: #F2F2F1;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -871,8 +908,9 @@
 
   .project_check {
     display: flex;
-    width: 300px;
+    width: 250px;
     height: 45px;
+    margin: auto;
   }
 
   .project_var {
@@ -880,9 +918,13 @@
     font-family: "Roboto";
     text-transform: uppercase;
     color: #F2F2F1;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
     text-align: center;
+  }
+
+  .project_swap_var {
+    display: none;
   }
 
   .slider_wrapper {
@@ -896,7 +938,7 @@
   }
 
   .slider_text {
-    width: 62%;
+    width: 60%;
 
   }
 
@@ -911,14 +953,14 @@
   }
 
   .slider_button {
-    width: 38%;
+    width: 40%;
   }
 
   .slider_btn {
     width: 100%;
     max-width: 200px;
     height: 60px;
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .main {
@@ -1136,6 +1178,30 @@
   .calc_button_text {
     width: 500px;
     margin-top: 10px;
+  }
+
+  .swap_left {
+    display: block;
+    fill: #1F405A;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 5px;
+  }
+
+  .swap_right {
+    display: block;
+    fill: #1F405A;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    right: 5px;
+    transform: rotate(90deg);
   }
 }
 
