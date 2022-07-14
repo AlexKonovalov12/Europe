@@ -70,9 +70,6 @@
   cursor: pointer;
 }
 
-.menu:hover {
-  text-decoration-line: underline;
-}
 
 .menu_burger {
   position: absolute;
@@ -364,6 +361,7 @@
 
 .stage_btn:hover {
   color: rgb(44 74 103);
+  background-color: white;
 }
 
 .border {
@@ -654,6 +652,7 @@
 
 .calc_btn:hover {
   color: #1F405A;
+  background-color: white;
 }
 
 .calc_button_text {
