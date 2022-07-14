@@ -68,6 +68,7 @@
   top: 60px;
   right: 80px;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 
@@ -157,6 +158,12 @@
 
 .btn:hover {
   background-color: rgb(44 74 103);
+}
+
+.project_swap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project_check {
