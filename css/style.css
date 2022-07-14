@@ -306,7 +306,7 @@
 }
 
 .plus {
-  background-image: url(/images/plus.png);
+  background-image: url(../images/plus.png);
   background-repeat: no-repeat;
   background-size: 50px;
   height: 50px;
@@ -549,7 +549,7 @@
   appearance: none;
   width: 25px;
   height: 25px;
-  background: url(/images/Ellipse\ 1.svg);
+  background: url(../images/Ellipse\ 1.svg);
   background-repeat: no-repeat;
   background-size: 25px;
   cursor: pointer;
@@ -561,7 +561,7 @@
   width: 25px;
   height: 25px;
   border: 0;
-  background: url(/images/Ellipse\ 1.svg);
+  background: url(../images/Ellipse\ 1.svg);
   background-repeat: no-repeat;
   background-size: 25px;
   cursor: pointer;
@@ -596,7 +596,7 @@
   height: 25px;
   width: 25px;
   background-repeat: no-repeat;
-  background-image: url(/images/Rectangle\ 39.svg);
+  background-image: url(../images/Rectangle\ 39.svg);
   background-size: 25px;
 }
 
