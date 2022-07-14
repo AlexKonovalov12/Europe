@@ -675,6 +675,10 @@
     margin-bottom: 300px;
   }
 
+  .wrapper_text {
+    width: 100%;
+  }
+
   .wrapper_icons {
     width: 100%;
     max-width: 300px;
@@ -1001,15 +1005,45 @@
     width: 500px;
     margin-top: 10px;
   }
+}
 
+@media (max-width: 370px) {
+  .wrapper_title {
+    margin-left: 20px;
+  }
 
+.text_head {
+  font-size: 25px;
+  margin-bottom: 0;
+}
 
+.text_bottom {
+  font-size: 16px;
+  font-weight: 300;
+}
 
+.slider_btn {
+  font-size: 13px;
+}
 
+ .stage_btn {
+   font-size: 20px;
+ }
 
+ .calc_flex {
+  gap: 10px;
+ }
 
+.calc_btn {
+  font-size: 20px;
+}
 
+.checkmark {
+  left: 10px;
+}
 
-
+ .calc_check_container {
+   padding-left: 55px;
+ }
 
 }
